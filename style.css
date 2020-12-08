@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@500&display=swap');
+
+:root {
+    --dark: #3e3c3d;
+    --white: #efe1e1;
+    --salmon: rgb(228, 110, 97);
+    --background: #6a4b50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    background: var(--background);
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--dark);
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 3px 20px;
+}
+
+nav ul li a:hover {
+    color: var(--salmon);
+}
+
+.style-about {
+    background: url("https://user-images.githubusercontent.com/71545212/101416565-b7c5e780-391c-11eb-8816-3d3cb6277b05.png");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0 2.5rem;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+.about {
+    border: 5px solid var(--background);
+    padding: 50px;
+    color:var(--white);
+    text-align: center;
+    line-height: 35px;
+}
+
+.about h1 {
+    font-size: 2rem;
+    letter-spacing: 1.3px;
+}
+
+.about p {
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+#projects {
+    padding: 80px 0;
+}
+
+.projects-header {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    color: var(--white);
+}
+
+.projects-header h2 {
+    padding-bottom: 5px;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+    padding: 0 2.5rem;
+    margin-bottom: 80px;
+}
+
+.project-details div {
+    border: 3px solid var(--salmon);
+    background-color: var(--salmon);
+    transition: all .4s ease;
+}
+
+.project-details div p {
+    padding: 1rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--dark);
+    cursor: pointer;
+}
+
+.project-details div:hover {
+    transform: scale(1.07);
+}
+
+img {
+    width: 100%;
+    /* height: auto;
+    object-fit: cover; */
+}
+
+#contact {
+    background-image: url("https://user-images.githubusercontent.com/71545212/101416571-bac0d800-391c-11eb-9242-9ad813068332.png");
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 0 2.5rem;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: var(--background);
+    margin-bottom: 30px;
+}
+
+.contact-link {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.contact-link a {
+    text-decoration: none;
+    color: var(--dark);
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    transition: all .4s ease;
+}
+
+.contact-link a:hover {
+    color: var(--salmon);
+    transform: translateY(8px);
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+}
