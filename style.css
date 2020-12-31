@@ -109,6 +109,10 @@ nav ul li a:hover {
     transition: all .4s ease;
 }
 
+.project-details div a {
+    text-decoration: none;
+}
+
 .project-details div p {
     padding: 1rem;
     text-align: center;
